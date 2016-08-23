@@ -1,4 +1,5 @@
-@import 'variables';
+@import 'helpers/variables';
+@import 'helpers/animations';
 
 // * { border: 1px solid blue; }
 
@@ -48,6 +49,14 @@
   }
 }
 
+.about {
+  font-size: 2.5em;
+
+  .slide-container {
+    padding: 10% 5%;
+  }
+}
+
 .next-slide {
   position: fixed;
   right: 3vw;
@@ -56,6 +65,13 @@
   height: 8em;
   border-radius: 10px 10px 0 0;
   background: $bubblegum;
+
+  .glyphicon-chevron-down {
+    animation: $bounce;
+    font-size: 4em;
+    top: 0.75em;
+    left: 0.75em;
+  }
 
   border: {
     top: $white-border;

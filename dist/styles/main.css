@@ -1,3 +1,9 @@
+@keyframes bounce {
+  from {
+    top: 0.75em; }
+  to {
+    top: 0.5em; } }
+
 .slide {
   min-height: 100vh;
   color: white; }
@@ -27,6 +33,11 @@
   font-size: 5vw;
   text-align: right; }
 
+.about {
+  font-size: 2.5em; }
+  .about .slide-container {
+    padding: 10% 5%; }
+
 .next-slide {
   position: fixed;
   right: 3vw;
@@ -38,3 +49,8 @@
   border-top: 4px solid white;
   border-right: 4px solid white;
   border-left: 4px solid white; }
+  .next-slide .glyphicon-chevron-down {
+    animation: 1s infinite linear alternate bounce;
+    font-size: 4em;
+    top: 0.75em;
+    left: 0.75em; }

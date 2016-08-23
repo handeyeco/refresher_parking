@@ -1,8 +1,11 @@
 @keyframes bounce {
   from {
-    top: 0.75em; }
+    top: 30%; }
   to {
-    top: 0.5em; } }
+    top: 20%; } }
+
+body {
+  font-size: 4em; }
 
 .slide {
   min-height: 100vh;
@@ -13,10 +16,8 @@
     background-color: #3079AB; }
   .slide:nth-child(3) {
     background-color: #2C9676; }
-  .slide:nth-child(4) {
-    background-color: #E15258; }
   .slide:last-child {
-    background-color: #838CC7; }
+    background-color: #E15258; }
 
 .splash .slide-container {
   padding-left: 1vw;
@@ -33,24 +34,59 @@
   font-size: 5vw;
   text-align: right; }
 
-.about {
-  font-size: 2.5em; }
-  .about .slide-container {
-    padding: 10% 5%; }
+a, a:visited, a:active, a:link {
+  color: rgba(255, 255, 255, 0.5); }
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  border-bottom: 4px dashed white; }
+
+.about .slide-container, .mission .slide-container, .follow .slide-container {
+  padding: 10% 5%; }
 
 .next-slide {
   position: fixed;
-  right: 3vw;
+  right: 4vw;
   bottom: 0;
-  width: 10em;
-  height: 8em;
+  width: 150px;
+  height: 110px;
   border-radius: 10px 10px 0 0;
   background: #F092B0;
+  z-index: 9999;
+  cursor: pointer;
   border-top: 4px solid white;
   border-right: 4px solid white;
   border-left: 4px solid white; }
   .next-slide .glyphicon-chevron-down {
     animation: 1s infinite linear alternate bounce;
-    font-size: 4em;
-    top: 0.75em;
-    left: 0.75em; }
+    font-size: 75px;
+    top: 30%;
+    left: 27%; }
+
+.social-icons {
+  text-align: center; }
+  .social-icons a:hover {
+    border-bottom: 0; }
+  .social-icons .twitter-btn, .social-icons .facebook-btn {
+    display: inline-block;
+    border: 4px solid white;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    font-size: 2em;
+    color: white;
+    margin: 0.5em 5%;
+    transition: background 0.3s; }
+    .social-icons .twitter-btn i, .social-icons .facebook-btn i {
+      position: relative;
+      top: 0.2em;
+      left: 0; }
+  .social-icons .twitter-btn:hover {
+    background: #00ACEE; }
+  .social-icons .facebook-btn:hover {
+    background: #3B5998; }
+
+@media only screen and (max-width: 544px) {
+  body {
+    font-size: 3em; } }

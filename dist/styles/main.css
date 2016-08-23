@@ -1,0 +1,13 @@
+.slide {
+  min-height: 100vh;
+  color: white; }
+  .slide:first-child {
+    background-color: #C25975; }
+  .slide:nth-child(2) {
+    background-color: #3079AB; }
+  .slide:nth-child(3) {
+    background-color: #2C9676; }
+  .slide:nth-child(4) {
+    background-color: #E15258; }
+  .slide:last-child {
+    background-color: #838CC7; }

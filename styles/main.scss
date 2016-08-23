@@ -1,1 +1,26 @@
 @import 'variables';
+
+.slide {
+  min-height: 100vh;
+  color: white;
+
+  &:first-child {
+    background-color: $raspberry;
+  }
+
+  &:nth-child(2) {
+    background-color: $blueberry;
+  }
+
+  &:nth-child(3) {
+    background-color: $kale;
+  }
+
+  &:nth-child(4) {
+    background-color: $tomato;
+  }
+
+  &:last-child {
+    background-color: $eggplant;
+  }
+}

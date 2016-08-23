@@ -1,5 +1,7 @@
 @import 'variables';
 
+// * { border: 1px solid blue; }
+
 .slide {
   min-height: 100vh;
   color: white;
@@ -22,5 +24,42 @@
 
   &:last-child {
     background-color: $eggplant;
+  }
+}
+
+.splash {
+  .slide-container {
+    padding-left: 1vw;
+    display: inline-block;
+    margin: 20vh auto;
+  }
+
+  h1, p {
+    line-height: 1em;
+  }
+
+  h1 {
+    font-size: 20vw;
+  }
+
+  p {
+    font-size: 5vw;
+    text-align: right;
+  }
+}
+
+.next-slide {
+  position: fixed;
+  right: 3vw;
+  bottom: 0;
+  width: 10em;
+  height: 8em;
+  border-radius: 10px 10px 0 0;
+  background: $bubblegum;
+
+  border: {
+    top: $white-border;
+    right: $white-border;
+    left: $white-border;
   }
 }

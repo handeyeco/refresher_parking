@@ -11,3 +11,30 @@
     background-color: #E15258; }
   .slide:last-child {
     background-color: #838CC7; }
+
+.splash .slide-container {
+  padding-left: 1vw;
+  display: inline-block;
+  margin: 20vh auto; }
+
+.splash h1, .splash p {
+  line-height: 1em; }
+
+.splash h1 {
+  font-size: 20vw; }
+
+.splash p {
+  font-size: 5vw;
+  text-align: right; }
+
+.next-slide {
+  position: fixed;
+  right: 3vw;
+  bottom: 0;
+  width: 10em;
+  height: 8em;
+  border-radius: 10px 10px 0 0;
+  background: #F092B0;
+  border-top: 4px solid white;
+  border-right: 4px solid white;
+  border-left: 4px solid white; }

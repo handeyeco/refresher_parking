@@ -16,7 +16,7 @@ body {
     background-color: #3079AB; }
   .slide:nth-child(3) {
     background-color: #2C9676; }
-  .slide:last-child {
+  .slide:nth-child(4) {
     background-color: #E15258; }
 
 .splash .slide-container {

@@ -24,11 +24,17 @@ body {
   display: inline-block;
   margin: 20vh auto; }
 
+.splash .elephant {
+  height: 0.85em;
+  padding-bottom: 0.15em;
+  padding-right: 0.1em;
+  color: white; }
+
 .splash h1, .splash p {
   line-height: 1em; }
 
 .splash h1 {
-  font-size: 20vw; }
+  font-size: 18vw; }
 
 .splash p {
   font-size: 5vw;
